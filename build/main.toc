@@ -17,18 +17,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Spektrum der $^{137}Cs$-Quelle}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Matrixrechnung}{9}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Würfel 1}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Spektrum der $^{137}Cs$-Quelle}{9}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Würfel 2}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Würfel 1}{10}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Würfel 3}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Würfel 2}{11}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Würfel 4}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Würfel 3}{11}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{11}{section.5}%
+\contentsline {subsection}{\numberline {4.6}Würfel 4}{12}{subsection.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{11}{section*.11}%
+\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{12}{section*.11}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

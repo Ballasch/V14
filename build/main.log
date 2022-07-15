@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.14)  15 JUL 2022 14:45
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.14)  15 JUL 2022 15:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1403,7 +1403,15 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./build/main.bbl)
+ (./build/main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Peak
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 11.
 Package biblatex Info: Reference segment=0 on input line 11.
 Package hyperref Info: Link coloring OFF on input line 11.
@@ -1465,7 +1473,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 ] (./content/theorie.tex [3
 Missing character: There is no 𝜌 (U+1D70C) in font [lmroman10-regular]:+tlig;!
 ]
-<content/attenuation.jpg, id=60, 253.69781pt x 273.27094pt>
+<content/attenuation.jpg, id=62, 253.69781pt x 273.27094pt>
 File: content/attenuation.jpg Graphic file (type jpg)
 <use content/attenuation.jpg>
 Package luatex.def Info: content/attenuation.jpg  used on input line 56.
@@ -1474,7 +1482,7 @@ Package luatex.def Info: content/attenuation.jpg  used on input line 56.
 
 LaTeX Warning: Reference `Aufbau' on page 6 undefined on input line 4.
 
-<content/aufbau.JPG, id=80, 560.0925pt x 397.485pt>
+<content/aufbau.JPG, id=82, 560.0925pt x 397.485pt>
 File: content/aufbau.JPG Graphic file (type jpg)
 <use content/aufbau.JPG>
 Package luatex.def Info: content/aufbau.JPG  used on input line 11.
@@ -1483,74 +1491,74 @@ Package luatex.def Info: content/aufbau.JPG  used on input line 11.
 
 LaTeX Warning: Reference `projektion' on page 8 undefined on input line 18.
 
-<content/projektion.JPG, id=95, 566.86781pt x 580.41844pt>
+<content/projektion.JPG, id=97, 566.86781pt x 580.41844pt>
 File: content/projektion.JPG Graphic file (type jpg)
 <use content/projektion.JPG>
 Package luatex.def Info: content/projektion.JPG  used on input line 25.
 (luatex.def)             Requested size: 376.42744pt x 385.43317pt.
-[8<./content/projektion.JPG>]) (./content/auswertung.tex
+) (./content/auswertung.tex [8<./content/projektion.JPG>]
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 5.
+(Font)              scaled to size 12.00128pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 5.
+(Font)              scaled to size 8.00085pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 5.
+(Font)              scaled to size 6.00064pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 5.
+(Font)              scaled to size 11.99872pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 5.
+(Font)              scaled to size 7.99915pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 5.
+(Font)              scaled to size 5.99936pt on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 5.
+(hyperref)                removing `superscript' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 14.
 
-<Daten/leerlauf.pdf, id=101, 433.62pt x 289.08pt>
+<Daten/leerlauf.pdf, id=107, 433.62pt x 289.08pt>
 File: Daten/leerlauf.pdf Graphic file (type pdf)
 <use Daten/leerlauf.pdf>
-Package luatex.def Info: Daten/leerlauf.pdf  used on input line 8.
+Package luatex.def Info: Daten/leerlauf.pdf  used on input line 20.
 (luatex.def)             Requested size: 376.42744pt x 250.96382pt.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 9.
+(Font)              scaled to size 5.00053pt on input line 21.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 9.
-[9<./Daten/leerlauf.pdf>]) (./content/diskussion.tex [10]) [11] (./build/main.aux)
+(Font)              scaled to size 4.99947pt on input line 21.
+[9] [10<./Daten/leerlauf.pdf>]) (./content/diskussion.tex [11]) [12] (./build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 48788915F4C1EF268FBDC1B0DD0C5A68;12891.
+(rerunfilecheck)             Checksum: 2355DB95CE75A1DDC400DB223665D411;13596.
 
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 60CFB3A9DEDEDF9B28CCDCE40964B2F2;1913.
+(rerunfilecheck)             Checksum: F0F4E8C895CB2C51C1CAAEAB7EC2A316;2028.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 35798 strings out of 478388
+ 35812 strings out of 478388
  100000,1977958 words of node,token memory allocated
  773 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 4 dir, 2 glue, 4 kern, 1 glyph, 47 attribute, 80 glue_spec, 25 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1681,3:224,4:57,5:442,6:47,7:5989,8:49,9:673,10:22,11:741,12:1
- 54671 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:1417,3:239,4:57,5:442,6:50,7:5989,8:47,9:624,10:22,11:741,12:1
+ 54682 multiletter control sequences out of 65536+600000
  261 fonts using 97420543 bytes
  113i,22n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 291524 bytes).
+</home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (12 pages, 297724 bytes).
 
-PDF statistics: 258 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 277 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 131072)
+ 129 words of extra memory for PDF output out of 10000 (max. 100000000)
 
