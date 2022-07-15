@@ -1,9 +1,28 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Matrixrechnung}
+
+Die Matrix $\underline{\underline{A}}$ aus Gleichung \ref{eqn:matrixA} für die Projektionen $I_j$ aus Abbildung \ref{fig:Aufbau2} hat die Form 
+
+\begin{align}
+  \underline{\underline{A}} = \left[\begin{matrix}0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0 & 0 & 0 & 0\\0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0\\0 & 0 & 0 & 0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0\\1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1\\0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0\\\sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2}\\0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0\\0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1\\0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0\\1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0\end{matrix}\right].
+\end{align}
+
+Damit menschliche Rechenfehler vermieden werden, werden alle Matrixrechnungen, auch Inversion und Transposition, in den folgenden Abschnitten mit dem Python-Modul \texttt{sympy} \cite{sympy} bearbeitet. Das Python-Modul \texttt{sympy} ist ein Computeralgebrasystem zum Rechnen mit symbolischen Ausdrücken. 
 
 \subsection{Spektrum der $^{137}Cs$-Quelle}
 
+Für die bestimmung der Prozesse in dem Messpektrum wurden die gemessenen Ereignisse am $NaJ$-Detektor grafisch gegen die Channels dargestellt in Abbildung \ref{fig:leer}. Bei dieser Messung war der erste Würfel jedoch zwischen $\gamma$-Quelle und Detektor. Da dieser Würfel innen leer ist, 
+stellt die Messung eine gute Näherung zum Leerlauf dar. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.9 \textwidth]{Daten/leerlauf.pdf}
+  \caption{Die identifizierten Prozesse in dem Spektrum der Messung der $^{137}Cs$-Quelle. Die Quelle strahlt bei dieser Messung durch die Hauptdiagonale des leeren Würfels. }
+  \label{fig:leer}
+\end{figure}
+
+In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezeichnet. Dabei ist der Photo-Peak deutlich im Channel X zu erkennen. Nach der Literatur liegt dieser Punkt bei der Energie $E_P = 662 \,\si{\kilo\electronvolt}$ \cite{Peak}. 
 \subsection{Würfel 1}
 
 

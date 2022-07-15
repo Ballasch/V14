@@ -3,22 +3,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}%
+\contentsline {subsection}{\numberline {1.1}Tomographie}{3}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}%
+\contentsline {subsection}{\numberline {1.2}Interaktion Gamma-Strahlung mit Materie}{3}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Spektrum der $^{137}Cs$-Quelle}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {1.3}Messelektronik}{4}{subsection.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Würfel 1}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {1.4}Berechnung der Absorptionskoeffizienten}{4}{subsection.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Würfel 2}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {2}Aufbau}{6}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Würfel 3}{4}{subsection.3.4}%
+\contentsline {section}{\numberline {3}Durchführung}{8}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Würfel 4}{4}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Spektrum der $^{137}Cs$-Quelle}{9}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{4}{section*.7}%
+\contentsline {subsection}{\numberline {4.2}Würfel 1}{10}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Würfel 2}{10}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Würfel 3}{10}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Würfel 4}{11}{subsection.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{11}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{11}{section*.11}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
