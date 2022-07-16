@@ -1,18 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[58] biber:340> INFO - === Sat Jul 16, 2022, 06:44:51
-[75] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[135] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
-[147] Biber.pm:4340> INFO - Processing section 0
-[156] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[162] bibtex.pm:1689> INFO - LaTeX decoding ...
-[167] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[207] Biber.pm:4531> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[212] bibtex.pm:1689> INFO - LaTeX decoding ...
+[57] biber:340> INFO - === Sat Jul 16, 2022, 08:23:20
+[73] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[133] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
+[146] Biber.pm:4340> INFO - Processing section 0
+[155] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[161] bibtex.pm:1689> INFO - LaTeX decoding ...
+[166] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[206] Biber.pm:4531> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[211] bibtex.pm:1689> INFO - LaTeX decoding ...
 [216] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
-[254] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[254] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[255] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[255] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
 [255] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[255] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[263] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[256] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[262] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
 [269] bbl.pm:757> INFO - Output to build/main.bbl
