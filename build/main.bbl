@@ -224,8 +224,14 @@
       \endverb
       \keyw{Python,Computer algebra system,Symbolics}
     \endentry
+    \entry{CS_Peak}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://atom.kaeri.re.kr/old/gamrays.html}}
+      \field{title}{Table of Gamma rays}
+    \endentry
   \enddatalist
-  \missing{Peak}
 \endrefsection
 \endinput
 

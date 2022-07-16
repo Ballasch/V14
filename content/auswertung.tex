@@ -11,10 +11,10 @@ Die Matrix $\underline{\underline{A}}$ aus Gleichung \ref{eqn:matrixA} für die 
 
 Damit menschliche Rechenfehler vermieden werden, werden alle Matrixrechnungen, auch Inversion und Transposition, in den folgenden Abschnitten mit dem Python-Modul \texttt{sympy} \cite{sympy} bearbeitet. Das Python-Modul \texttt{sympy} ist ein Computeralgebrasystem zum Rechnen mit symbolischen Ausdrücken. 
 
+ 
 \subsection{Spektrum der $^{137}Cs$-Quelle}
 
-Für die bestimmung der Prozesse in dem Messpektrum wurden die gemessenen Ereignisse am $NaJ$-Detektor grafisch gegen die Channels dargestellt in Abbildung \ref{fig:leer}. Bei dieser Messung war der erste Würfel jedoch zwischen $\gamma$-Quelle und Detektor. Da dieser Würfel innen leer ist, 
-stellt die Messung eine gute Näherung zum Leerlauf dar. 
+Für die bestimmung der Prozesse in dem Messpektrum wurden die gemessenen Ereignisse am $NaJ$-Detektor grafisch gegen die Channels dargestellt in Abbildung \ref{fig:leer}. Bei dieser Messung war der erste Würfel zwischen $\gamma$-Quelle und Detektor. 
 \begin{figure}[H]
   \centering
   \includegraphics[width = 0.9 \textwidth]{Daten/leerlauf.pdf}
@@ -22,10 +22,13 @@ stellt die Messung eine gute Näherung zum Leerlauf dar.
   \label{fig:leer}
 \end{figure}
 
-In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezeichnet. Dabei ist der Photo-Peak deutlich im Channel X zu erkennen. Nach der Literatur liegt dieser Punkt bei der Energie $E_P = 662 \,\si{\kilo\electronvolt}$ \cite{Peak}. 
+In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezeichnet. Der Photo-Peak befindet sich im Channel $62.44$. Nach der Literatur liegt dieser Punkt bei der Energie $E_P = 661.7 \,\si{\kilo\electronvolt}$ \cite{CS_Peak}. 
+ 
 \subsection{Würfel 1}
 
-
+Um die Untergrundstrahlung zu messen, wird für die Nullmessung der Intensität ein leerer Würfel verwendet, der die Nummerierung 1 beträgt und aus einem Aluminiummantel besteht. Diese wird in den Messungen jeweils automatisch vom gemessenen Spektrum abgezogen. 
+Aufgrund der unterschiedlichen Dicken bei den verschiedenen Einstrahlungswinkel werden einmal die diagnoalen Strahlengänge $I_7$ und $I_8$ sowie der horizontale Strahlengang $I_4$ 
+gemessen. Die Messwerte dazu befinden sich in der Tabelle \ref{tab:w1}.
 \begin{table}[H]
   \centering
   \begin{tabular}{c c c c}
@@ -41,13 +44,29 @@ In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezei
   \label{tab:w1}
 \end{table}
 
-\subsection{Würfel 2}
+Die Counts $N$ wurden hierbei im Messprogramm unter der Variable \texttt{Net Area} angegeben. Die Variable \texttt{Net Area} setzt sich so zusammen, dass alle Ereignisse im Photo-Peak integriert werden und der Untergrund automatisch subtrahiert wird. 
+Der Fehler der Counts ist statistisch verteilt und hat die Form 
+\begin{align*}
+  \sigma_N = \sqrt{N}.
+\end{align*}
+Die Zeit ist zwar auch fehlerbehaftet aber da diese am Computer gemessen wird und dieser die Zeit in Millisekunden genau messen kann, ist der Fehler in der Zeit bei den Messungen in diesem Versuch sehr klein und daher vernachlässigbar. \\
+Die Intensitäten werden mit der folgenden Gleichung berechnet: \begin{align*}
+  I = \frac{N}{t}
+\end{align*}
+und der Fehler der Intensität wird nach der gaußschen Fehlerfortpflanzung vereinfacht zu 
+\begin{align*}
+  \sigma_I = \frac{\sigma_N}{t}.
+\end{align*}
+Die gemessenen Intensitäten in diesem Abschnitt werden im weiteren Verlauf als Intensität $I_0$ verwendet, die den Hohlwürfel passieren. 
 
+
+\subsection{Würfel 2}
+Die Messwerte für den Würfel 2 befinden sich in der Tabelle \ref{tab:w2}. Die Absorptionskoeffizienten werden mit der Gleichung \ref{eqn:mu_full}
 \begin{table}[H]
   \centering
   \begin{tabular}{c c c c}
     \toprule
-     Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $I \:/\: \si{\per\second}$ \\
+     Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $N_j \:/\: \si{\per\second}$ \\
     \midrule
             $I_{  4}$ &   $300$ & $41777 \pm    300$ & $139.3\pm1.0$ \\
             $I_{  5}$ &   $300$ & $43230 \pm    289$ & $144.1\pm1.0$ \\
@@ -60,7 +79,7 @@ In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezei
             $I_{ 10}$ &   $300$ & $44080 \pm    280$ & $146.9\pm0.9$ \\
     \bottomrule
     \end{tabular}
-  \caption{Die gemessenen Net-Areas des Photo-Peaks und die entsprechende Zählraten des zweiten Würfels. }
+  \caption{Die gemessenen Net-Areas des Photo-Peaks und die entsprechenden Intensitäten des zweiten Würfels. }
   \label{tab:w2}
 \end{table}
 
@@ -70,7 +89,7 @@ In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezei
   \centering
   \begin{tabular}{c c c c}
     \toprule
-    Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $I \:/\: \si{\per\second}$ \\
+    Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $N_j \:/\: \si{\per\second}$ \\
     \midrule
              $I_{ 4}$ &   $300$ & $1788 \pm   55$ & $5.96\pm0.18$ \\
              $I_{ 5}$ &   $300$ & $1751 \pm   56$ & $5.84\pm0.19$ \\
@@ -94,7 +113,7 @@ In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezei
   \centering
   \begin{tabular}{c c c c}
     \toprule
-    Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $I \:/\: \si{\per\second}$ \\
+    Projektion &  $t \:/\: \si{\second}$ &     $N$ &           $N_j \:/\: \si{\per\second}$ \\
     \midrule
         $I_{  4}$ &   $300$ & $14752 \pm     146$ & $  49.2\pm0.5$ \\
         $I_{  5}$ &   $300$ & $13959 \pm     170$ & $  46.5\pm0.6$ \\
