@@ -29,6 +29,53 @@
       \field{title}{Anleitung zu V14 Tomographie}
       \field{year}{2022}
     \endentry
+    \entry{XCOM}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=22b1cd26b9369f2fd4c8ab635819ba51}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3f4ac734b032fbeafd4f470f4dcc2602}{%
+           family={Hubbell},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65d966b9e9ed244821f19633391fc64b}{%
+           family={Seltzer},
+           familyi={S\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=35d3ab99997c40295d4e4dc9986b8992}{%
+           family={Coursey},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3b22452a122a1b79bf2eb49a730d689d}{%
+           family={Zucker},
+           familyi={Z\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {http://physics.nist.gov/xcom}%
+      }
+      \strng{namehash}{b3df1b6c3eea554413d856ec4f233254}
+      \strng{fullhash}{18922609c438f239c1e043bdbdb95707}
+      \strng{bibnamehash}{b3df1b6c3eea554413d856ec4f233254}
+      \strng{authorbibnamehash}{b3df1b6c3eea554413d856ec4f233254}
+      \strng{authornamehash}{b3df1b6c3eea554413d856ec4f233254}
+      \strng{authorfullhash}{18922609c438f239c1e043bdbdb95707}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html}}
+      \field{month}{1999-01-01}
+      \field{note}{(besucht am: 18.07.2022)}
+      \field{title}{XCOM: Photon Cross Section Database (version 1.2)}
+      \field{year}{1999}
+    \endentry
     \entry{Gilmore}{article}{}
       \name{author}{1}{}{%
         {{hash=aed4ec0547c9426d82bf4245f5e06196}{%
@@ -229,6 +276,7 @@
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://atom.kaeri.re.kr/old/gamrays.html}}
+      \field{note}{(besucht am: 18.07.2022)}
       \field{title}{Table of Gamma rays}
     \endentry
   \enddatalist

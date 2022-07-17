@@ -1,5 +1,5 @@
-\section{Auswertung}
-\label{sec:Auswertung}
+\section{Vorbereitung}
+\label{sec:Vorbereitung}
 
 \subsection{Matrixrechnung}
 
@@ -11,7 +11,29 @@ Die Matrix $\underline{\underline{A}}$ aus Gleichung \ref{eqn:matrixA} für die 
 
 Damit menschliche Rechenfehler vermieden werden, werden alle Matrixrechnungen, auch Inversion und Transposition, in den folgenden Abschnitten mit dem Python-Modul \texttt{sympy} \cite{sympy} bearbeitet. Das Python-Modul \texttt{sympy} ist ein Computeralgebrasystem zum Rechnen mit symbolischen Ausdrücken. 
 
- 
+\subsection{Literaturwerte der Absorptionskoeffizienten und Wirkungsquerschnitten von verschiedenen Materialen }
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c c c c c}
+    \toprule
+     {} & Aluminium & Blei & Eisen & Messing & Delrin \\
+    \midrule
+     $\rho \:[g/cm^3]$                    &$ 2.7              $ & $11.34 $ & $7.86  $ & $8.6   $ & $1.41               $ \\
+     $\sigma_{\text{Compton}} \:[cm^2/g]$ &$0.0742            $ & $0.0601$ & $0.0716$ & $0.0702$ & $0.0822             $\\
+     $\mu_\text{Compton} \:[1/cm]$        &$0.2005            $ & $0.6821$ & $0.5639$ & $0.5806$ & $0.1159             $ \\
+     $\sigma_\text{Photo}\:[cm^2/g]$      &$6.565\cdot 10^{-5}$ & $0.0439$ & $0.0008$ & $0.0013$ & $6.784\cdot 10^{-6} $ \\
+     $\mu_\text{Ges} \:[1/cm]$            &$0.0001            $ & $0.4918$ & $0.0068$ & $0.0117$ & $9.565 \cdot 10^{-5}$\\
+     $\sigma_\text{Ges}\:[cm^2/g]$        &$0.0743            $ & $0.1035$ & $0.0724$ & $0.0716$ & $0.0822             $      \\
+     $\mu_\text{Ges} \:[1/cm]$            &$ 0.2007           $ & $1.1741$ & $0.5705$ & $0.5917$ & $0.1167             $\\
+    \bottomrule
+  \end{tabular}
+  \caption{Wechselwirkungsporzesse und Absorptionskoeffizienten von den verschiedenen Materialen \cite{XCOM}}
+  \label{tab:lit}
+\end{table}
+
+\section{Auswertung}
+\label{sec:Auswertung}
 \subsection{Spektrum der $^{137}Cs$-Quelle}
 
 Für die bestimmung der Prozesse in dem Messpektrum wurden die gemessenen Ereignisse am $NaJ$-Detektor grafisch gegen die Channels dargestellt in Abbildung \ref{fig:leer}. Bei dieser Messung war der erste Würfel zwischen $\gamma$-Quelle und Detektor. 
@@ -22,8 +44,9 @@ Für die bestimmung der Prozesse in dem Messpektrum wurden die gemessenen Ereign
   \label{fig:leer}
 \end{figure}
 
-In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezeichnet. Der Photo-Peak befindet sich im Channel $62.44$. Nach der Literatur liegt dieser Punkt bei der Energie $E_P = 661.7 \,\si{\kilo\electronvolt}$ \cite{CS_Peak}. 
- 
+In der Abbildung \ref{fig:leer} sind die erkannten Prozesse im Spektrum eingezeichnet. Der Photo-Peak des Caesium-Präparates befindet sich im Channel $65$. Hier ist die Energie groß genug um im Szintillatormaterial zum Photoeffekt zu führe. Nach der Literatur liegt dieser Punkt bei der Energie $E_P = 661.7 \,\si{\kilo\electronvolt}$ \cite{CS_Peak}. \\
+Der flache Bereich ist das Compton-Kontinuum, welches durch die Streuung des Photons an den Elektronen des Szintillatormaterials entsteht. Dabei wird nicht die ganze Energie des Photons abgegeben, so dass der Energierest im Szintillator registriert werden kann. \\
+Am Anfang bis zu dem Channel $20$ werden keine Zählraten aufgenommen. Dies entsteht durch den vorgeschlossenen Diskriminator. Dadurch werden erst Stromstärken über einem gewissen Schwellenwert registriert. Dieser Schwellenwert liegt bei $E_S = 200 \,\si{\kilo\electronvolt}$.
 \subsection{Würfel 1}
 
 Um die Untergrundstrahlung zu messen, wird für die Nullmessung der Intensität ein leerer Würfel verwendet, der die Nummerierung 1 beträgt und aus einem Aluminiummantel besteht. Diese wird in den Messungen jeweils automatisch vom gemessenen Spektrum abgezogen. 
@@ -61,7 +84,8 @@ Die gemessenen Intensitäten in diesem Abschnitt werden im weiteren Verlauf als 
 
 
 \subsection{Würfel 2}
-Die Messwerte für den Würfel 2 befinden sich in der Tabelle \ref{tab:w2}. Die Absorptionskoeffizienten werden mit der Gleichung \ref{eqn:mu_full} berechnet, wobei die Diagonalelemente der Gewichtungsmatrix $\underline{\underline{W}}$ 
+Die Messwerte für den Würfel 2 befinden sich in der Tabelle \ref{tab:w2}. 
+Die Absorptionskoeffizienten werden mit der Gleichung \ref{eqn:mu} berechnet, wobei die Diagonalelemente der Gewichtungsmatrix $\underline{\underline{W}}$ 
 anhand der gaußschen Fehlerfortpflanzung also 
 \begin{align}
   \sigma_{W_i} = \sqrt{(\frac{\sigma_{I_0}}{I_0})^2 + \frac{\sigma_{N_j}}{N_j})^2}
@@ -88,6 +112,20 @@ berechnet werden. Die berechneten Absorptionskoeffizienten sind in der Tabelle \
   \label{tab:w2}
 \end{table}
 
+Der Mittelwert $\bar{\mu}$ aus $n$ Stichproben $\mu_i$ ergibt sich aus: 
+\begin{align}
+  \bar{\mu} = \frac{1}{n} \sum_{i=1}^n \mu_i.
+\end{align}
+Die Standardabweichung errechnet sich nach: 
+\begin{align}
+  \label{eqn:std}
+  s_i = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (\mu_i - \bar{\mu})^2}
+\end{align}
+mit zufälligen Fehlern behafteten Werten $\mu_i$ mit $i =1, \,...\,,n$.\\
+Der aus der Standardabweichung aus der Gleichung \ref{eqn:std} resultierende Fehler des Mittelwertes ergibt sich nach: 
+\begin{align}
+  \Delta \bar{\mu} = \frac{s_i}{\sqrt{n}} = \sqrt{\frac{\sum_{i=1}^n (\mu_i - \bar{\mu})^2}{n(n-1)}}.
+\end{align}
 \begin{table}[H]
   \centering
   \begin{tabular}{c c}
@@ -109,11 +147,14 @@ berechnet werden. Die berechneten Absorptionskoeffizienten sind in der Tabelle \
   \label{tab:w2_mu}
 \end{table}
 
-
+Die Werte für die Absorptionskoeffizienten $\mu_n$ ergeben sich nach Gleichung \ref{eqn:mu}. Für den zweiten Würfel ergibt sich somit der Absorptionskoeffizient im Durchschnitt zu:
 \begin{align}
-  \bar{\mu}_2 = 0.57\pm 0.22 \,\si{\centi\metre}
+  \bar{\mu}_2 = 0.57\pm 0.22 \,\si{\centi\metre}.
 \end{align}
 \subsection{Würfel 3}
+
+Die Messwerte für den dritten Würfel befinden sich in der Tabelle 5. 
+Die berechneten Absorptionskoeffizienten für den dritten Würfel sind in der Tabelle \ref{tab:w3_mu} aufgelistet. 
 
 \begin{table}[H]
   \centering
@@ -143,29 +184,30 @@ berechnet werden. Die berechneten Absorptionskoeffizienten sind in der Tabelle \
     \toprule
      $\mu_k$ &  $\mu \:/\: \si{\per\centi\metre}$ \\
     \midrule
-            $\mu_{  1}$ &   $-0.080$ \\
-            $\mu_{  2}$ &   $ 0.164$ \\
-            $\mu_{  3}$ &   $ 0.025$ \\
-            $\mu_{  4}$ &   $ 0.096$ \\
-            $\mu_{  5}$ &   $ 0.005$ \\
-            $\mu_{  6}$ &   $-0.074$ \\
-             $\mu_{ 7}$ &   $ 0.026$ \\
-             $\mu_{ 8}$ &   $-0.108$ \\
-             $\mu_{ 9}$ &   $ 0.124$ \\
+            $\mu_{  1}$ &   $ 0.841423$ \\
+            $\mu_{  2}$ &   $ 0.865685$ \\
+            $\mu_{  3}$ &   $ 0.254574$ \\
+            $\mu_{  4}$ &   $ 0.965683$ \\
+            $\mu_{  5}$ &   $ 0.052687$ \\
+            $\mu_{  6}$ &   $ 0.853554$ \\
+             $\mu_{ 7}$ &   $ 0.265022$ \\
+             $\mu_{ 8}$ &   $ 0.741425$ \\
+             $\mu_{ 9}$ &   $ 1.019241$ \\
     \bottomrule
     \end{tabular}
   \caption{Berechnete Absorptionskoeffizienten für den dritten Würfel. }
   \label{tab:w3_mu}
 \end{table}
-
+Der Mittelwert des Absorptionskoeffizienten für den dritten Würfel ist somit:
 
 \begin{align}
-  \bar{\mu}_3 = 0.020\pm0.030 \,\si{\centi\metre}
+  \bar{\mu}_3 = 0.65\pm0.11 \,\si{\centi\metre}.
 \end{align}
 
 \subsection{Würfel 4}
 
-
+In diesem Abschnitt wird ein Würfel mit verschiedenen Materialien gemessen. Aus diesem Grund kann der Absorptionskoeffizient nicht über alle Ausrichtungen gemittelt werden. \\
+Die Messdaten zu den Photo-Peaks sind in der Tabelle \ref{tab:w4} aufgelistet. 
 \begin{table}[H]
   \centering
   \begin{tabular}{c c c c}
@@ -189,3 +231,29 @@ berechnet werden. Die berechneten Absorptionskoeffizienten sind in der Tabelle \
   \caption{Die gemessenen Net-Areas des Photo-Peaks und die entsprechende Zählraten des vierten Würfels. }
   \label{tab:w4}
 \end{table}
+
+Die berechneten Absorptionskoeffizienten sind in Tabelle \ref{tab:w4_mu} einzusehen. Das Element mit der niedrigsten Abweichung wurde auch in der Tabelle mit angegeben. Auf die Glaubwürdigkeit der Identifizierung wird in der Diskussion eingegangen. 
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+     $\mu_k$ &  $\mu \:/\: \si{\per\centi\metre}$ & Niedrigste Abweichung \\
+    \midrule
+            $\mu_{  1}$ &   $ 0.364250$  & Aluminium: $ 35.67\%$\\
+            $\mu_{  2}$ &   $ 0.081718$  &   Delrin:  $133.32\%$\\
+            $\mu_{  3}$ &   $ 0.327763$  & Aluminium: $ 35.67\%$\\
+            $\mu_{  4}$ &   $ 0.382805$  & Aluminium: $ 35.67\%$\\
+            $\mu_{  5}$ &   $ 0.315788$  & Aluminium: $ 35.67\%$\\
+            $\mu_{  6}$ &   $ 0.400906$  &    Eisen:  $-52.27\%$\\
+             $\mu_{ 7}$ &   $ 0.301147$  & Aluminium: $ 35.67\%$\\
+             $\mu_{ 8}$ &   $ 0.011126$  &   Delrin:  $133.32\%$\\
+             $\mu_{ 9}$ &   $ 0.265038$  & Aluminium: $ 35.67\%$\\
+    \bottomrule
+    \end{tabular}
+  \caption{Berechnete Absorptionskoeffizienten für den vierten Würfel. }
+  \label{tab:w4_mu}
+\end{table}
+
+
+

@@ -2350,7 +2350,9 @@
     <bcf:citekey order="3">Anleitung</bcf:citekey>
     <bcf:citekey order="4">Anleitung</bcf:citekey>
     <bcf:citekey order="5">sympy</bcf:citekey>
-    <bcf:citekey order="6">CS_Peak</bcf:citekey>
+    <bcf:citekey order="6">XCOM</bcf:citekey>
+    <bcf:citekey order="7">XCOM</bcf:citekey>
+    <bcf:citekey order="8">CS_Peak</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

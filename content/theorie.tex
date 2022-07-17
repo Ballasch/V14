@@ -90,4 +90,23 @@ Mit der Matrixdarstellung ergibt sich dann für mehrere Messungen die Formel
     \vec{I} = A \vec{\mu} \,.
 \end{equation}
 Die Spalten von A stellen dabei den i-ten Block dar und die Zeilen jeweils die j-te Messung. Die einzelnen Einträge sind dabei die Strecke die der Strahl bei der jeweiligen Messung durch einen gegebenen Block genommen hat. Damit geben sie auch an, welchen Weg der Strahl durch den Block genommen hat.
-Damit das Gleichungssystem lösbar ist, muss die Matrix mindestens denselben Rang haben wie die Dimension von $\vec{mu}$. Zudem muss die Matrix invertierbar sein.
+Damit das Gleichungssystem lösbar ist, muss die Matrix mindestens denselben Rang haben wie die Dimension von $\vec{mu}$. 
+In diesem Versuch werden mehr Messungen gemacht wodurch das Gleichungssystem überbestimmt wird. Mit der Methode der kleinsten Quadrate und unter der Berücksichtigung von Gleichung \ref{eqn:matrixA} lässt sich die Gleichung 
+\begin{align}
+    W A \cdot \vec{\mu} = W \vec{I}
+\end{align}
+herleiten. Dabei ist $W$ die Gewichtungsmatrix mit 
+\begin{align}
+    W = V[I] ^{-1}.
+\end{align}
+
+Dadurch ergibt sich für die Absorbtionskoeffizienten die Gleichung 
+\begin{align}
+    \label{eqn:mu}
+    \vec{\mu} = (A^T W A)^{-1} (A^T W \vec{I})
+\end{align}
+mit den Unsicherheiten
+\begin{align}
+    V[\mu] = (A^T W A)^{-1}.
+\end{align}
+Die Varianzmatrix $V$ ist definiert als die Inverse der Gewichtungsmatrix, da die Unsicherheiten Poisson-verteilt sind. 

@@ -15,30 +15,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Durchführung}{8}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
+\contentsline {section}{\numberline {4}Vorbereitung}{9}{section.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Matrixrechnung}{9}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Spektrum der $^{137}Cs$-Quelle}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Literaturwerte der Absorptionskoeffizienten und Wirkungsquerschnitten von verschiedenen Materialen}{9}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Würfel 1}{10}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Würfel 2}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {5.1}Spektrum der $^{137}Cs$-Quelle}{10}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Würfel 3}{12}{subsection.4.5}%
+\contentsline {subsection}{\numberline {5.2}Würfel 1}{11}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Würfel 4}{13}{subsection.4.6}%
+\contentsline {subsection}{\numberline {5.3}Würfel 2}{11}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.4}Würfel 3}{13}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Würfel 2}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.5}Würfel 4}{14}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Würfel 3}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Würfel 4}{14}{subsection.5.3}%
+\contentsline {subsection}{\numberline {6.1}Würfel 2}{15}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Fehlerquellen}{14}{subsection.5.4}%
+\contentsline {subsection}{\numberline {6.2}Würfel 3}{15}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{14}{section*.13}%
+\contentsline {subsection}{\numberline {6.3}Würfel 4}{15}{subsection.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Fehlerquellen}{15}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{15}{section*.15}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
